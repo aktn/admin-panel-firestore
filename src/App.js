@@ -3,8 +3,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Auth from "./containers/Auth/Auth";
 import Home from "./containers/Home";
+import { connect } from "react-redux";
 
-function App() {
+function App(props) {
   return (
     <Router>
       <div className="App">
@@ -32,4 +33,11 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    isAuthenticated: state.auth.isAuthenticated,
+    isVerifying: state.auth.isVerifying
+  };
+};
+
+export default connect(mapStateToProps)(App);
