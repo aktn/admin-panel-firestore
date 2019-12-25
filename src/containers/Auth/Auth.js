@@ -68,7 +68,6 @@ const Auth = props => {
     const { dispatch } = props;
     dispatch(loginUser(email, password));
   };
-  console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 
   const { loginError, isAuthenticated, isLoggingIn } = props;
 

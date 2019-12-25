@@ -1,0 +1,11 @@
+{
+  "RequestedOrders": [{ "link": "", "display": "Requested Orders" }],
+  "In-stockOrders": [{ "link": "", "display": "In-stock Orders" }],
+  "Items": [
+    { "link": "", "display": "Men" },
+    { "link": "", "display": "Women" },
+    { "link": "", "display": "Kids" },
+    { "link": "", "display": "Home" }
+  ],
+  "signOut": [{ "link": "", "display": "Sign Out" }]
+}
